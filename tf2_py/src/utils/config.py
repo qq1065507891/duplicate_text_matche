@@ -11,7 +11,7 @@ class Config(object):
     model_type = 'bert'
 
     log_folder_path = os.path.join(root_path, 'log')
-    log_path = os.path.join(root_path, 'log.txt')
+    log_path = os.path.join(log_folder_path, 'log.txt')
 
     config_path = os.path.join(root_path, 'bert_pretrain/bert_config.json')
     checkpoint_path = os.path.join(root_path, 'bert_pretrain/bert_model.ckpt')
