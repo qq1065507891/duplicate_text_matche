@@ -14,7 +14,7 @@ class Config(object):
     bert_base_path = os.path.join(root_path, 'bert-base-uncased')
 
     log_folder_path = os.path.join(root_path, 'log')
-    log_path = os.path.join(root_path, 'log.txt')
+    log_path = os.path.join(log_folder_path, 'log.txt')
 
     train_path = os.path.join(root_path, 'data/train.pkl')
     test_path = os.path.join(root_path, 'data/test.pkl')
