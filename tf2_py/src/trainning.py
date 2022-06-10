@@ -54,7 +54,7 @@ def training(config):
         ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=5, verbose=0, mode='auto', epsilon=0.0001,
                           cooldown=0, min_lr=0),
         ModelCheckpoint(config.model_path, monitor='val_loss', verbose=1, save_best_only=True,
-                        mode='max', period=1, save_weights_only=True)
+                        mode='min', period=1, save_weights_only=True)
     ]
 
     start_time = time.time()
